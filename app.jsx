@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import init, { App, WasmReact } from "./src/lib.rs";
+import init, { App, WasmReact } from "./pkg/rust_wasm_tetris.js";
 
 init().then(() => {
   WasmReact.useReact(React);
